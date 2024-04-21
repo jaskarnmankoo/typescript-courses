@@ -121,7 +121,7 @@ let myCar3: [number, string, string] = [2002, 'Toyota', 'Corolla']
 //*  `readonly` tuples
 
 const numPair: [number, number] = [4, 5] //✔️ Valid
-const numTriplet: [number, number, number] = [7] //! Invalid
+// const numTriplet: [number, number, number] = [7] //! Invalid
 
 // [101, 102, 103].length //? number[].length
 numPair.length //? [number, number] length
@@ -135,7 +135,7 @@ numPair.length //! ❌ DANGER ❌
 
 const roNumPair: readonly [number, number] = [4, 5]
 roNumPair.length
-roNumPair.push(6) // [4, 5, 6] //! Not allowed
-roNumPair.pop() // [4, 5] //! Not allowed
+// roNumPair.push(6) // [4, 5, 6] //! Not allowed
+// roNumPair.pop() // [4, 5] //! Not allowed
 
 export default {}
